@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gitlab-config
+  namespace: gitlab-test
+data:
+  gitlab.rb: |
+    external_url 'http://gitlab.example.com'
